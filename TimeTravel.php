@@ -11,6 +11,17 @@ class TimeTravel {
      * @var DateTime
      */
     private $end;
+    
+    /**
+     * @param $start
+     * @param $end
+     */
+
+    public function __construct($start, $end)
+    {
+        $this->start = $start;
+        $this->end = $end;
+    }
 
     public function getTravelInfo() : string
     {
@@ -32,15 +43,4 @@ class TimeTravel {
         }
         return $allDates;
     }
-
-    /**
-     * @param $start
-     * @param $end
-     */
-    public function __construct($start, $end)
-    {
-        $this->start = $start;
-        $this->end = $end;
-    }
-
 }
