@@ -15,6 +15,6 @@ echo $voyage1->getTravelInfo();
 echo $voyage1->findDate($intervalSeconds);
 foreach($voyage1->backToFutureStepByStep($step) as $date) {
     echo $date."\n";
-};
+}
 
 
